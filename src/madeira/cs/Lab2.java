@@ -30,7 +30,7 @@ public class Lab2 {
         // Part III code below
         Scanner MyAge = new Scanner(System.in);
         System.out.println("Enter Your age");
-        String Age = MyAge.nextLine();
-        System.out.println();
+        int Age = MyAge.nextInt();
+        System.out.println("You've been alive for " + 365 * Age + " days.");
     }
 }
