@@ -5,6 +5,9 @@ import java.util.Scanner;
  * Date: 1/1/1970
  **/
 public class Lab2 {
+    /*
+        Great work, 10/10
+     */
     public static void main(String[] args) {
         /*
             Instructions for Use
