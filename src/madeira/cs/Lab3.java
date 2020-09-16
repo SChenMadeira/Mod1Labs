@@ -76,6 +76,6 @@ public class Lab3 {
         System.out.println("Enter Your birth day");
         int day = MyBirthday.nextInt();
         int result = (2020-year) * 365 + (9-Month) * 30 + 16 - day;
-        System.out.println(result);
+        System.out.println("Your age is "+result+" days!");
     }
 }
