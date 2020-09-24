@@ -3,27 +3,39 @@ package madeira.cs;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        String s1;
-        s1 = "String1";
-        System.out.println(s1);
-        String s2;
-        s2 = "String2";
-        System.out.println(s2);
-        String s3;
-        s3 = "String3";
-        System.out.println(s3);
-        // Part II code below
-        s1="NewString1";
-        System.out.println(s1);
-        s2="NewString2";
-        System.out.println(s2);
-        s3="NewString3";
-        System.out.println(s3);
-        // Part III code below
-        System.out.println(s1.length());
-        System.out.println(s1.replace("New", "Old"));
-        System.out.println(s1.toLowerCase());
+        /*
+        Exercise I
+        ----------
+        In Type I syntax (i.e. String [] list = {"item1", "item2"} construct an array of the planets which are:
+        Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune and Pluto
+        Yes, Pluto too, he's cute.
+        Print out these planets with the cool new foreach loop
+        a la: for (String listItem: myList )
+        */
+        String[] mylist = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"};
+        for (String listItem: mylist) {
+            System.out.println(listItem);
+        }
+
+        /*
+        Exercise II
+        -----------
+        Use syntax Type II (i.e. String [] myList = new String [i]) to make a list of #s 1-10
+        Adding to the list should occur within a for loop & only take one line of code
+        Once the list is constructed, print it out.
+         */
+        int [] numbers =new int [10];
+
+        for (int i=0; i<10; i++) {
+            numbers[i] = i;
+        }
+
+        for (int listItems: numbers) {
+            System.out.println(listItems);
+        }
+
+
+
     }
 }
 
