@@ -29,6 +29,7 @@ public class SuperLab {
             String temp = myReader.nextLine();
             String[] artists = new String[numline];
             int counter=0;
+
             while (myReader.hasNextLine()) {
                 artists[counter] = myReader.nextLine();
                 counter ++;
@@ -41,8 +42,8 @@ public class SuperLab {
             for (String line: artists) {
                 artists1[counter] = new Artist();
                 artists1[counter].setName(line.split(",")[0]);
-                artists1[counter].setName(line.split(",")[1]);
-                artists1[counter].setName(line.split(",")[2]);
+                artists1[counter].setAlbum(line.split(",")[1]);
+                artists1[counter].setTwitter(line.split(",")[2]);
                 /*
                 line.split(",")[0];
                 line.split(",")[1];
@@ -50,17 +51,18 @@ public class SuperLab {
                  */
                 counter ++;
             }
-
+            int i=0;
             Scanner s=new Scanner(System.in);
             for (Artist line: artists1) {
-                System.out.println("what do you think of" +artists1[0].getName()+"enter a rating");
+                System.out.println("What do you think of " +artists1[i].getName()+"? Please enter a rating:");
                 int rating=s.nextInt();
-                System.out.println("the artist" +"enter a rating"+".......");
+                System.out.println("The artist " +artists1[i].getName()+" released the album"+artists1[i].getAlbum()+".\nThe twitter handle is"+artists1[i].getTwitter()+ ", and received a rating of " +rating+".");
+                i++;
                 counter ++;
             }
         }
         catch (FileNotFoundException e) {
-            System.out.println("An error occurred");
+            System.out.println("There is an error");
             e.printStackTrace();
         }
     }
