@@ -3,6 +3,12 @@ package madeira.cs;
 import java.util.Scanner;
 
 public class Lab3 {
+    /*
+        Corinna - 
+        Good work here. For the first part, you're missing a few statements.
+        For the second part, it'd be nice to know how you want the user to enter
+        the month. For the last part, great job! An accurate calculation.
+    */
     public static void main(String[] args) {
 	 /*
            Instructions For Use
