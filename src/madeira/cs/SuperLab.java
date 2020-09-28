@@ -21,9 +21,17 @@ import java.util.Scanner;
 	*/
 
 public class SuperLab {
+    /*
+        Corinna - 
+        Great work. Clean and efficient code. Next time - add comments
+        and make use of your get/setRating method! Otherwise, you 
+        should be very proud of this. I hope you find a use for coding
+        in your future.
+
+    */
     public static void main(String[] args){
         try {
-            File myObj =new File ("/Users/cccsssyyy/Downloads/artistList.txt");
+            File myObj =new File ("C:\\Users\\Peter Wallace Local\\Downloads\\artistList.txt");
             Scanner myReader=new Scanner(myObj);
             int numline = myReader.nextInt();
             String temp = myReader.nextLine();
